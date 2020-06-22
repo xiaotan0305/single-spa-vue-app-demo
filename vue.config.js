@@ -7,10 +7,10 @@ module.exports = {
   },
   configureWebpack: {
     output: {
-      library: 'single-spa-vue-app-demo',
-      libraryTarget: 'umd',
-      filename: 'single-spa-vue-app-demo.js',
-      path: path.resolve(__dirname, 'dist'),
+    //   library: 'single-spa-vue-app-demo',
+    //   libraryTarget: 'umd',
+    //   filename: 'single-spa-vue-app-demo.js',
+    //   path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
       new webpack.optimize.LimitChunkCountPlugin({

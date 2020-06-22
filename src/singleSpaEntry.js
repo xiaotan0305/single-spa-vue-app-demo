@@ -25,6 +25,15 @@ const vueLifecycles = singleSpaVue({
     router,
   },
 });
+if (!window.singleSpaNavigate) { // 如果不是single-spa模式
+  /* eslint-disable no-new */
+  new Vue({
+    el: '#vue-app',
+    render: (h) => h(App),
+    router,
+  });
+}
+
 
 export const { bootstrap } = vueLifecycles;
 export const { mount } = vueLifecycles;
